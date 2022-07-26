@@ -12,7 +12,9 @@ public class Problem_4 : MonoBehaviour
     //You should have the results of Part_4, 0,0,0, Part_4_Child -5,-5,-5 and Part_4_GameObject, 5,5,5
     void Start()
     {
-
+        var Part4 = GetComponent<Transform>();
+        var Part4child = transform.GetChild(0).GetComponent<Transform>();
+        var Part4gameobject = GameObject.Find("Part_4_Game_Object").GetComponent<Transform>();
     }
 
     //Prints out the name and the position of the variables

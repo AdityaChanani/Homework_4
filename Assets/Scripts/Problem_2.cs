@@ -13,5 +13,17 @@ public class Problem_2 : MonoBehaviour
 
     //Create a function called OnlyOddOnes that takes in an int array as a parameter and returns 
     //a List of integers that were odd inside the array
+    List<int> List(int[] numbers)
+    {
+        List<int> List2 = new List<int>();
 
+        for (int I = 0; I < numbers.Length; I++)
+        {
+            if (numbers[I]%2 == 1)
+            {
+                List2.Add(numbers[I]);
+            }
+        }
+        return List2;
+    }
 }
